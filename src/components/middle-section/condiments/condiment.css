@@ -1,0 +1,12 @@
+#condiments{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 83%;
+}
+
+#condiments p{
+    display: flex;
+    justify-content: space-around;
+}

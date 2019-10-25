@@ -1,0 +1,30 @@
+#middle-section{
+    padding: 0;
+    margin: 0;
+    grid-row-start: 1;
+    grid-row-end: span 5;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    height: 85vh;  
+}
+
+#condiment-option{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#condiment-option p{
+    width: 3em;
+    min-height: 100%;
+    padding: 1em;
+    border: .1em solid black;
+}
+
+#middle-header{
+    margin-top: 12em;
+    border: 1px solid black;
+}

@@ -1,0 +1,21 @@
+#bottom-section{
+    display: flex;
+    height: 15vh;
+    margin: 0; 
+    padding: 2em 0;
+    justify-content: space-evenly;
+    grid-row-start: 5;
+    grid-row-end: span 1; 
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    border-top: .1em solid black;
+}
+
+#bottom-section button{
+    border-radius: 10%;
+    height: 5.5em;
+    width: 6em;
+    margin: auto 0;
+    padding: 0;
+    border: .1em solid orange;
+}

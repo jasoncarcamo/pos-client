@@ -1,0 +1,20 @@
+#tabs-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    grid-row-start: 1;
+    grid-row-end: span 5;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    border-right: .1em solid black;
+}
+
+#tabs-section button{
+    margin: 0 auto;
+    border-radius: 100%;
+    padding: 0;
+    width: 6em;
+    height: 6em;
+    border: .1em solid orange;
+}
