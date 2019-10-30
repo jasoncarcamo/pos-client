@@ -1,0 +1,21 @@
+.active-order-section{
+    display: block;
+    position: relative;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    background-color: white;
+    overflow: auto ;
+    height: 70vh;
+    border: .05em solid black;
+}
+
+.active-order-section p{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin: 1.5em auto;
+    padding: 0;
+    list-style: none;
+    border: 1px solid black;
+}

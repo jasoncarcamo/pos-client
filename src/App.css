@@ -1,6 +1,6 @@
 #main{
   display: grid;
-  grid-template: auto auto auto/ auto auto auto;
+  grid-template: auto auto/ auto auto auto;
   grid-gap: 0;
   height: 100vh;
   max-height: 100vh;

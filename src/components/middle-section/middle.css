@@ -5,26 +5,11 @@
     grid-row-end: span 5;
     grid-column-start: 2;
     grid-column-end: span 3;
-    height: 85vh;  
+    height: 85vh; 
+    border-bottom: .05em solid black;
 }
 
-#condiment-option{
-    display: flex;
-    position: relative;
-    justify-content: space-evenly;
-    top: 0;
-    left: 0;
+#middle-section > h2{
+    margin: 8em auto 0 auto;
     text-align: center;
-}
-
-#condiment-option p{
-    width: 3em;
-    min-height: 100%;
-    padding: 1em;
-    border: .1em solid black;
-}
-
-#middle-header{
-    margin-top: 12em;
-    border: 1px solid black;
 }

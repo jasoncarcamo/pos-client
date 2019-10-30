@@ -1,0 +1,68 @@
+#condiments{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 83%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#condiment-option{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#condiment-option p{
+    width: 3em;
+    margin: 4em auto 0 auto;
+    padding: 1em;
+    border: .1em solid black;
+}
+
+
+#condiment-option p{
+    display: flex;
+    justify-content: space-around;
+}
+
+#condiment-categories{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#condiment-categories ul{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
+    height: 65vh;
+    width: 33.33%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: auto;
+    text-align: center;
+}
+
+#condiment-categories ul p{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#condiment-categories ul li{
+    width: 80%;
+    margin: 1em auto;
+    padding: 0 .2em;
+    border: .1em solid black;
+    cursor: pointer;
+}
+
+.condiment-li{
+    display: block !important;
+}

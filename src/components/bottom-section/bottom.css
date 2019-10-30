@@ -1,5 +1,7 @@
 #bottom-section{
     display: flex;
+    position: relative;
+    z-index: 2;
     height: 15vh;
     margin: 0; 
     padding: 2em 0;
@@ -8,6 +10,7 @@
     grid-row-end: span 1; 
     grid-column-start: 2;
     grid-column-end: span 3;
+    background-color: white;
     border-top: .1em solid black;
 }
 

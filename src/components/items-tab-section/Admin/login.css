@@ -1,0 +1,44 @@
+#admin-login{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#admin-login form {
+    margin: 4em auto 0 auto;
+    padding: 0;
+    width: 60%;
+}
+
+#admin-login form fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+}
+
+#admin-login form fieldset label{
+    display: block;
+    margin: 3em auto .5em auto;
+    width: 15em;
+    font-size: 1em; 
+} 
+
+#admin-login form input {
+    display: block;;
+    margin: 0 auto;
+    width: 19em;
+    height: 2.5em;
+    font-size: .8em;
+}
+
+#admin-error{
+    text-align: center;
+}
+
+#admin-login form button{
+    width: 6em;
+    height: 3em;
+    margin: 1em auto 2em auto;
+    font-size: 1em;
+} 

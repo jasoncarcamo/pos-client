@@ -23,7 +23,7 @@
     display: grid;
     grid-template: 1fr / 1fr 1fr;
     width: 100%;
-    margin: -.9em 0 0 0;
+    margin: -1em 0 0 0;
     padding: 0;
 }
 
@@ -35,24 +35,30 @@
 
 #delete-option{
     position: absolute;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0;
     padding: .5em 0 0 0;
     height: 2em;
     width: 100%;
     bottom: 3em;
     right: 0;
+    z-index: 3;
     text-align: center;
     border: .05em solid black;
+    background-color: white;
 }
 
 #total{
     position: absolute;
-    font-size: 1.2em;
+    font-size: 1.5em;
     height: 1em;
     margin: 0;
     bottom: 0;
     right: 0;
-    padding: 1em 3em;
+    padding: 1em 0;
+    z-index: 2;
+    border-left: .05em solid black;
+    width: 100%;
+    background-color: white;
     text-align: right;
 }
