@@ -218,14 +218,14 @@ export default class Employees extends React.Component{
         const confirmSection = document.getElementById("clocked-in-confirm"); 
 
         Promise.all([
-            fetch("http://localhost:8000/api/auth", {
+            fetch("https://morning-river-47424.herokuapp.com/api/auth", {
                 method: "POST", 
                 headers:{
                     'content-type': "application/json"
                 },
                 body: JSON.stringify({id: this.state.id, pin: this.state.pin})
             }),
-            fetch(`http://localhost:8000/api/employees/${this.state.id}`, {
+            fetch(`https://morning-river-47424.herokuapp.com/api/employees/${this.state.id}`, {
                 method: "PATCH",
                 headers: {
                     'content-type': "application/json",
@@ -233,7 +233,7 @@ export default class Employees extends React.Component{
                 },
                 body: JSON.stringify(options)
             }),
-            fetch(`http://localhost:8000/api/timesheets${timesheetOption.id}`, {
+            fetch(`https://morning-river-47424.herokuapp.com/api/timesheets${timesheetOption.id}`, {
                 method: timesheetOption.method,
                 headers: {
                     'content-type': "application/json",

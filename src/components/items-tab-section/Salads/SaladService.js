@@ -1,6 +1,6 @@
 const SaladService = {
     getSalads(){
-        return fetch("http://localhost:8000/api/menu/items", {
+        return fetch("https://morning-river-47424.herokuapp.com/api/menu/items", {
             headers: {
                 'content-type': "application/json",
                 'authorization': `bearer ${window.localStorage.getItem("admin")}`

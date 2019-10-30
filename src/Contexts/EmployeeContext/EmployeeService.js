@@ -1,6 +1,6 @@
 const EmployeeService = {
     getEmployees(){
-        return fetch("http://localhost:8000/api/employees", {
+        return fetch("https://morning-river-47424.herokuapp.com/api/employees", {
             headers: {
                 'content-type': "application/json",
                 'authorization': `bearer ${window.localStorage.getItem("admin")}`
@@ -15,7 +15,7 @@ const EmployeeService = {
             })
     },
     getEmployee(id){
-        return fetch(`http://localhost:8000/api/employees/${id}`, {
+        return fetch(`https://morning-river-47424.herokuapp.com/api/employees/${id}`, {
             headers: {
                 'content-type': "application/json",
                 'authorization': `bearer ${window.localStorage.getItem("admin")}`
@@ -30,7 +30,7 @@ const EmployeeService = {
             })
     },
     addEmployees(){
-        return fetch("http://localhost:8000/api/employees", {
+        return fetch("https://morning-river-47424.herokuapp.com/api/employees", {
             method: "POST",
             headers: {
                 'content-type': "application/json",
@@ -46,7 +46,7 @@ const EmployeeService = {
             })
     },
     updateEmployees(){
-        return fetch("http://localhost:8000/api/employees", {
+        return fetch("https://morning-river-47424.herokuapp.com/api/employees", {
             method: "PATCH",
             headers: {
                 'content-type': "application/json",
@@ -62,7 +62,7 @@ const EmployeeService = {
             })
     },
     removeEmployees(){
-        return fetch("http://localhost:8000/api/employees", {
+        return fetch("https://morning-river-47424.herokuapp.com/api/employees", {
             method: "DELETE",
             headers: {
                 'content-type': "application/json",

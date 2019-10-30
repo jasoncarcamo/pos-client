@@ -1,6 +1,6 @@
 const  OrdersService = {
     getOrders(){
-        return fetch("http://localhost:8000/api/active-orders", {
+        return fetch("https://morning-river-47424.herokuapp.com/api/active-orders", {
             headers: {
                 'content-type': "application/json",
                 'authorization': `bearer ${window.localStorage.getItem("admin")}`
@@ -15,7 +15,7 @@ const  OrdersService = {
             })
     },
     getOrder(id){
-        return fetch(`http://localhost:8000/api/active-orders${id}`, {
+        return fetch(`https://morning-river-47424.herokuapp.com/api/active-orders${id}`, {
             headers: {
                 'content-type': "application/json",
                 'authorization': `bearer ${window.localStorage.getItem("admin")}`
@@ -30,7 +30,7 @@ const  OrdersService = {
             })
     },
     addOrder(order){
-        return fetch("http://localhost:8000/api/active-orders", {
+        return fetch("https://morning-river-47424.herokuapp.com/api/active-orders", {
             method: "POST",
             headers: {
                 'content-type': "application/json",
@@ -47,7 +47,7 @@ const  OrdersService = {
             })
     },
     updateOrder(id, items){
-        return fetch(`http://localhost:8000/api/active-orders/${id}`, {
+        return fetch(`https://morning-river-47424.herokuapp.com/api/active-orders/${id}`, {
             method: "PATCH",
             headers: {
                 'content-type': "application/json",
@@ -65,7 +65,7 @@ const  OrdersService = {
             })
     },
     removeOrder(id){
-        return fetch(`http://localhost:8000/api/active-orders/${id}`, {
+        return fetch(`https://morning-river-47424.herokuapp.com/api/active-orders/${id}`, {
             method: "DELETE",
             headers: {
                 'content-type': "application/json",
@@ -81,7 +81,7 @@ const  OrdersService = {
             })
     },
     deleteOrder(id){
-        return fetch(`http://localhost:8000/api/active-orders/${id}`, {
+        return fetch(`https://morning-river-47424.herokuapp.com/api/active-orders/${id}`, {
             method: "DELETE",
             headers: {
                 'content-type': "application/json",

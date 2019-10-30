@@ -21,7 +21,7 @@ export default class AdminSignIn extends React.Component{
 
     handleAmin = (e) => {
         e.preventDefault();
-        fetch("http://localhost:8000/api/auth", {
+        fetch("https://morning-river-47424.herokuapp.com/api/auth", {
             method: "POST",
             headers: {
                 'content-type': "application/json"
