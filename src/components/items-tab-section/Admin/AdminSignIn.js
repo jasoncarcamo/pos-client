@@ -19,12 +19,12 @@ export default class AdminSignIn extends React.Component{
         this.setState({ pin: e.target.value});
     }
 
-    handleAmin = (e) => {
+    handleAdmin = (e) => {
         e.preventDefault();
         fetch("https://morning-river-47424.herokuapp.com/api/auth", {
             method: "POST",
             headers: {
-                'content-type': "application/json"
+                'content-type': "application/json",
             },
             body: JSON.stringify({id: this.state.id, pin: this.state.pin})
         })
@@ -37,6 +37,7 @@ export default class AdminSignIn extends React.Component{
                 return res.json();
             })
             .then( data => {
+                console.log(data)
                 if(!data.adminToken){
                     throw new Error("Unauthorized access");
                 };
@@ -48,7 +49,7 @@ export default class AdminSignIn extends React.Component{
     render(){
         return (
             <section id="admin-login">
-                <form onSubmit={this.handleAmin}>
+                <form onSubmit={this.handleAdmin}>
                     <fieldset>
 
                         <label htmlFor="admin-name">Id:</label>
