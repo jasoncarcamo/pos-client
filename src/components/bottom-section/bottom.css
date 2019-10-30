@@ -14,11 +14,17 @@
     border-top: .1em solid black;
 }
 
-#bottom-section button{
+.bottom-button{
+    border-radius: 10%;
+    margin: auto 0;
+    padding: 0;
+}
+
+.bottom-button button{
     border-radius: 10%;
     height: 5.5em;
     width: 6em;
-    margin: auto 0;
     padding: 0;
     border: .1em solid orange;
+    cursor: pointer;
 }

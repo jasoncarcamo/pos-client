@@ -68,8 +68,8 @@ export default class OrderInfo extends React.Component{
             <section id="order-section">
                 <p id="customer-counter">Customer: {this.state.customer}</p>
                 <div id="orders">
-                    <p onClick={this.handleNewOrder} onClick={this.initiateOrderInstance}>New order</p>
-                    <p onClick={this.handleActiveOrders}>Active orders</p>
+                    <p id="new-order-button" onClick={this.initiateOrderInstance}>New order</p>
+                    <p id="active-orders-button" onClick={this.handleActiveOrders}>Active orders</p>
                 </div>
                 <Route path="/" component={NewOrder}></Route>
                 <Route exact path="/order/:name" component={CurrentOrder}></Route>

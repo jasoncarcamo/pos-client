@@ -33,6 +33,14 @@
     border: 1px solid black;
 }
 
+#new-order-button{
+    cursor: pointer;
+}
+
+#active-orders-button{
+    cursor: pointer;
+}
+
 #delete-option{
     position: absolute;
     font-size: 1em;
@@ -46,6 +54,7 @@
     text-align: center;
     border: .05em solid black;
     background-color: white;
+    cursor: pointer;
 }
 
 #total{

@@ -6,11 +6,11 @@ export default class Tab extends React.Component{
     render(){
         return (
             <section id="tabs-section">
-                <button><Link to="/burgers">Burgers</Link></button>
-                <button><Link to="/sides">Sides</Link></button>
-                <button><Link to="/drinks">Drinks</Link></button>
-                <button><Link to="/salads">Salads</Link></button>
-                <button><Link to="/condiments">Condiments</Link></button>
+                <Link to="/burgers" className="tabs-buttons"><button>Burgers</button></Link>
+                <Link to="/sides" className="tabs-buttons"><button>Sides</button></Link>
+                <Link to="/drinks" className="tabs-buttons"><button>Drinks</button></Link>
+                <Link to="/salads" className="tabs-buttons"><button>Salads</button></Link>
+                <Link to="/condiments" className="tabs-buttons"><button>Condiments</button></Link>
             </section>
         );
     }

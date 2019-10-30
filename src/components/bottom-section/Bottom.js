@@ -7,10 +7,10 @@ export default class Bottom extends React.Component{
 
         return (
             <section id="bottom-section">
-                <button><Link to="/admin/login" className="bottom-button">Admin</Link></button>
-                <button><Link to="/employees" className="bottom-button">Employees</Link></button>        
-                <button><Link to="/cart" className="bottom-button">Checkout</Link></button>
-                <button><Link to="/" className="bottom-button">Name</Link></button>
+                <Link to="/admin/login" className="bottom-button"><button>Admin</button></Link>
+                <Link to="/employees" className="bottom-button"><button>Employees</button></Link>
+                <Link to="/cart" className="bottom-button"><button>Checkout</button></Link>
+                <Link to="/" className="bottom-button"><button>Name</button></Link>
             </section>
         )
     }

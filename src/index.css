@@ -21,3 +21,7 @@ code {
   margin: 0;
   height: auto;
 }
+
+button{
+  cursor: pointer;
+}
